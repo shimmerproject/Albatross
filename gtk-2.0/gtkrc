@@ -97,7 +97,7 @@ style "default" {
 		menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
         progressbarstyle    = 1     # 0 = flat, 1 = striped, 2 = blocks
 		reliefstyle 	    = 2     # 0 = flat, 1 = inset, 2 = shadow
-		rgba		        = TRUE  # FALSE = disabled, TRUE = enabled
+		rgba		        = FALSE  # FALSE = disabled, TRUE = enabled
 		roundness           = 2     # 0 = squared, 1 = old default, more will increase roundness
 		scrollbarstyle      = 0     # 0 = nothing, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
 		sliderstyle         = 0     # 0 = nothing added, 1 = handles
