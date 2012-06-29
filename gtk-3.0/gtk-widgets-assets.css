@@ -15,34 +15,6 @@
     background-repeat: repeat-y;
 }
 
-/*********
- * scale *
- *********/
-GtkScale.trough,
-.menubar .menuitem .scale.highlight.left,
-.scale.highlight.left {
-    background-image: url("assets/scale.png");
-    background-repeat: repeat-x;
-}
-
-GtkScale.trough.vertical,
-.scale.highlight.bottom {
-    background-image: url("assets/scale-vertical.png");
-    background-repeat: repeat-y;
-}
-
-GtkScale.trough:insensitive,
-.scale.highlight.left:insensitive {
-    background-image: url("assets/scale-insensitive.png");
-    background-repeat: repeat-x;
-}
-
-GtkScale.trough.vertical:insensitive,
-.scale.highlight.bottom:insensitive {
-    background-image: url("assets/scale-vertical-insensitive.png");
-    background-repeat: repeat-y;
-}
-
 /*******************
  * check and radio *
  *******************/

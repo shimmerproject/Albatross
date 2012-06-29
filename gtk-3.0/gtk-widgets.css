@@ -120,17 +120,33 @@ GtkSwitch.trough {
                 1 -1 inset alpha (@dark_bg_color, 0.03);
 }
 
+.entry:focus {
+    box-shadow: 1 2 inset alpha (@theme_selected_bg_color, 0.3),
+                1 1 inset alpha (@theme_selected_bg_color, 0.3),
+                -1 -1 inset alpha (@theme_selected_bg_color, 0.3);
+}
+
+GtkScale.slider,
+GtkScale.trough {
+    box-shadow: 1 0 inset shade (@theme_bg_color, 0.7),
+                0 1 inset shade (@theme_bg_color, 0.7),
+                -1 0 inset shade (@theme_bg_color, 0.7),
+                0 -1 inset shade (@theme_bg_color, 0.7);
+}
+
+GtkScale.slider:insensitive,
+GtkScale.trough:insensitive {
+    box-shadow: 1 0 inset shade (@theme_bg_color, 0.9),
+                0 1 inset shade (@theme_bg_color, 0.9),
+                -1 0 inset shade (@theme_bg_color, 0.9),
+                0 -1 inset shade (@theme_bg_color, 0.9);
+}
+
 .menuitem:hover {
     box-shadow: 1 1 inset alpha (@theme_selected_bg_color, 0.1),
                 1 1 inset alpha (@theme_selected_bg_color, 0.1),
                 -1 1 inset alpha (@theme_selected_bg_color, 0.1),
                 1 -1 inset alpha (@theme_selected_bg_color, 0.1);
-}
-
-.entry:focus {
-    box-shadow: 1 2 inset alpha (@theme_selected_bg_color, 0.3),
-                1 1 inset alpha (@theme_selected_bg_color, 0.3),
-                -1 -1 inset alpha (@theme_selected_bg_color, 0.3);
 }
 
 .button:insensitive,
@@ -992,10 +1008,6 @@ GtkScale.slider {
                                      color-stop (0.5, shade (@theme_bg_color, 1.01)),
                                      to (shade (@theme_bg_color, 0.91)));
     border-radius: 2px;
-    box-shadow: 1 0 inset shade (@theme_bg_color, 0.7),
-                0 1 inset shade (@theme_bg_color, 0.7),
-                -1 0 inset shade (@theme_bg_color, 0.7),
-                0 -1 inset shade (@theme_bg_color, 0.7);
 }
 
 GtkScale.slider:hover {
@@ -1010,10 +1022,6 @@ GtkScale.slider:insensitive {
                                      from (shade (@theme_bg_color, 1.09)),
                                      color-stop (0.5, shade (@theme_bg_color, 1.01)),
                                      to (shade (@theme_bg_color, 0.91)));
-    box-shadow: 1 0 inset shade (@theme_bg_color, 0.9),
-                0 1 inset shade (@theme_bg_color, 0.9),
-                -1 0 inset shade (@theme_bg_color, 0.9),
-                0 -1 inset shade (@theme_bg_color, 0.9);
 }
 
 GtkScale.slider.vertical {
@@ -1042,32 +1050,40 @@ GtkScale.mark {
 }
 
 GtkScale.trough,
+GtkScale.trough.vertical {
+    background-image: none;
+    background-color: shade (@theme_bg_color, 0.85);
+    border-color: transparent;
+}
+
+.menubar .menuitem .scale.highlight.left,
+.scale.highlight.left,
+.scale.highlight.bottom {
+    background-image: none;
+    background-color: @theme_selected_bg_color;
+    border-color: transparent;
+}
+
+GtkScale.trough,
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
-    background-color: transparent;
-    border-color: transparent;
-	border-width: 6px 0;
+	border-width: 5px 0;
+	border-radius: 7px;
 }
 
 GtkScale.trough.vertical,
 .scale.highlight.bottom {
-    background-color: transparent;
-    border-color: transparent;
-	border-width: 0 6px;
+	border-width: 0 5px;
+	border-radius: 7px;
 }
+
 
 GtkScale.trough:insensitive,
-.scale.highlight.left:insensitive {
-    background-color: transparent;
-    border-color: transparent;
-	border-width: 6px 0;
-}
-
 GtkScale.trough.vertical:insensitive,
+.scale.highlight.left:insensitive,
 .scale.highlight.bottom:insensitive {
-    background-color: transparent;
-    border-color: transparent;
-	border-width: 0 6px;
+    background-image: none;
+    background-color: shade (@theme_bg_color, 0.9);
 }
 
 /*************
