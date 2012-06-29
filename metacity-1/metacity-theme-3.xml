@@ -22,7 +22,7 @@
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="2" rounded_top_right="2">
 	<distance name="left_width" value="2" />
 	<distance name="right_width" value="2" />
-	<distance name="bottom_height" value="3" />
+	<distance name="bottom_height" value="2" />
 	<distance name="left_titlebar_edge" value="5"/>
 	<distance name="right_titlebar_edge" value="5"/>
 	<distance name="title_vertical_pad" value="5"/>
@@ -72,7 +72,7 @@
 <frame_geometry name="border" has_title="false" rounded_top_left="false" rounded_top_right="false" parent="normal" >
 	<distance name="left_width" value="2" />
 	<distance name="right_width" value="2" />
-	<distance name="bottom_height" value="1" />
+	<distance name="bottom_height" value="2" />
 	<distance name="title_vertical_pad" value="1" />
 </frame_geometry>
 

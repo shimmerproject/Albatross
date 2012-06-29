@@ -12,7 +12,7 @@
 <frame_geometry name="normal" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
 	<distance name="left_width" value="2"/>
 	<distance name="right_width" value="2"/>
-	<distance name="bottom_height" value="1"/>
+	<distance name="bottom_height" value="2"/>
 	<distance name="left_titlebar_edge" value="5"/>
 	<distance name="right_titlebar_edge" value="5"/>
 	<distance name="title_vertical_pad" value="5"/>
@@ -33,7 +33,7 @@
 <frame_geometry name="utility" title_scale="small" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
 	<distance name="left_width" value="2"/>
 	<distance name="right_width" value="2"/>
-	<distance name="bottom_height" value="1"/>
+	<distance name="bottom_height" value="2"/>
 	<distance name="left_titlebar_edge" value="5"/>
 	<distance name="right_titlebar_edge" value="5"/>
 	<distance name="title_vertical_pad" value="5"/>
@@ -45,7 +45,7 @@
 <frame_geometry name="border" has_title="false">
 	<distance name="left_width" value="2"/>
 	<distance name="right_width" value="2"/>
-	<distance name="bottom_height" value="1"/>
+	<distance name="bottom_height" value="2"/>
 	<distance name="left_titlebar_edge" value="0"/>
 	<distance name="right_titlebar_edge" value="0"/>
 	<distance name="button_width" value="0"/>
