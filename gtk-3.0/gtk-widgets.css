@@ -102,22 +102,21 @@ GtkWindow {
  * common effects *
  ******************/
 .button,
-.progressbar,
-GtkSwitch.slider {
-    box-shadow: 1 1 inset alpha (@theme_bg_color, 0.3),
-                1 1 inset alpha (@theme_bg_color, 0.3),
-                -1 1 inset alpha (@theme_bg_color, 0.3),
-                1 -1 inset alpha (@theme_bg_color, 0.3);
+.progressbar {
+    box-shadow: 1 1 inset alpha (@theme_base_color, 0.3),
+                -1 1 inset alpha (@theme_base_color, 0.3);
+}
+
+.progressbar.vertical {
+    box-shadow: 1 1 inset alpha (@theme_base_color, 0.3),
+                1 -1 inset alpha (@theme_base_color, 0.3);
 }
 
 .entry,
-.button:active,
 .trough,
-GtkSwitch.trough {
-    box-shadow: 1 1 inset alpha (@dark_bg_color, 0.03),
-                1 1 inset alpha (@dark_bg_color, 0.03),
-                -1 1 inset alpha (@dark_bg_color, 0.03),
-                1 -1 inset alpha (@dark_bg_color, 0.03);
+.button:active {
+    box-shadow: 1 1 inset alpha (@dark_bg_color, 0.05),
+                -1 -1 inset alpha (@dark_bg_color, 0.05);
 }
 
 .entry:focus {
@@ -128,9 +127,7 @@ GtkSwitch.trough {
 
 .menuitem:hover {
     box-shadow: 1 1 inset alpha (@theme_selected_bg_color, 0.1),
-                1 1 inset alpha (@theme_selected_bg_color, 0.1),
-                -1 1 inset alpha (@theme_selected_bg_color, 0.1),
-                1 -1 inset alpha (@theme_selected_bg_color, 0.1);
+                -1 1 inset alpha (@theme_selected_bg_color, 0.1);
 }
 
 GtkScale.slider,
