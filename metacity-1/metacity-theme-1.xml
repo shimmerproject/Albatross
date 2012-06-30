@@ -63,38 +63,38 @@
 <!-- ::: CORNERS OUTLINE::: -->
 <draw_ops name="corners_outline">
 	<!-- top left Dark -->
-	<line color="shade/gtk:bg[NORMAL]/0.54" x1="3" y1="1" x2="4" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.52" x1="2" y1="2" x2="2" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="1" y1="3" x2="1" y2="4"/>
+	<line color="#626262" x1="3" y1="1" x2="4" y2="1"/>
+	<line color="#626262" x1="2" y1="2" x2="2" y2="2"/>
+	<line color="#626262" x1="1" y1="3" x2="1" y2="4"/>
 	
 	<!-- top right Dark -->
-	<line color="shade/gtk:bg[NORMAL]/0.54" x1="width-5" y1="1" x2="width-4" y2="1"/>
-	<line color="shade/gtk:bg[NORMAL]/0.52" x1="width-3" y1="2" x2="width-3" y2="2"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="width-2" y1="3" x2="width-2" y2="4"/>
+	<line color="#626262" x1="width-5" y1="1" x2="width-4" y2="1"/>
+	<line color="#626262" x1="width-3" y1="2" x2="width-3" y2="2"/>
+	<line color="#626262" x1="width-2" y1="3" x2="width-2" y2="4"/>
 
 </draw_ops>
 
 <!-- ::: BORDER OUTLINE ::: -->
 <draw_ops name="border">
-	<line color="shade/gtk:bg[NORMAL]/0.56" x1="0" y1="0" x2="width" y2="0"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="0" y1="0" x2="0" y2="height"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="width-1" y1="0" x2="width-1" y2="height"/>
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="#626262" x1="0" y1="0" x2="width" y2="0"/>
+	<line color="#626262" x1="0" y1="0" x2="0" y2="height"/>
+	<line color="#626262" x1="width-1" y1="0" x2="width-1" y2="height"/>
+	<line color="#626262" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="maxed_border">
-	<line color="shade/gtk:bg[NORMAL]/0.50" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="#626262" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLEBAR ::: -->
 <draw_ops name="titlebar_gradient">
 	<!-- background -->
-	<rectangle color="shade/gtk:fg[NORMAL]/0.95" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#1e1e1e" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_unfocused">
 	<!-- background -->
-	<rectangle color="shade/gtk:fg[NORMAL]/0.95" x="0" y="0" width="width" height="height" filled="true" />
+	<rectangle color="#1e1e1e" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_maximized">
@@ -121,26 +121,26 @@
 
 <draw_ops name="titlebar_shaded">
 	<include name="border"/>
-	<line color="shade/gtk:fg[NORMAL]/0.60" x1="0" y1="height-1" x2="width" y2="height-1"/>
+	<line color="#626262" x1="0" y1="height-1" x2="width" y2="height-1"/>
 </draw_ops>
 
 <draw_ops name="round_titlebar_shaded">
 	<include name="border"/>
 	<include name="corners_outline"/>
-	<line color="shade/gtk:fg[NORMAL]/0.60" x1="5" y1="height-1" x2="width-6" y2="height-1"/>
+	<line color="#626262" x1="5" y1="height-1" x2="width-6" y2="height-1"/>
 </draw_ops>
 
 <!-- ::: TITLES ::: -->
 <draw_ops name="title">
 	<title x="(0 `max` ((width - title_width) / 2)) + 2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
-               color="blend/gtk:bg[NORMAL]/gtk:fg[NORMAL]/0.1" />
+               color="blend/#ffffff/#1e1e1e/0.1" />
 </draw_ops>
 
 <draw_ops name="title_unfocused">
 	<title x="(0 `max` ((width - title_width) / 2)) + 2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
-               color="blend/gtk:bg[NORMAL]/gtk:fg[NORMAL]/0.6" />
+               color="#626262" />
 </draw_ops>
 
 <!-- menu icon -->
