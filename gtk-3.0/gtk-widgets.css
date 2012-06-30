@@ -130,6 +130,7 @@ GtkWindow {
                 -1 1 inset alpha (@theme_selected_bg_color, 0.1);
 }
 
+/* draw borders using box shadow */
 GtkScale.slider,
 GtkScale.trough {
     box-shadow: 1 0 inset shade (@theme_bg_color, 0.7),
@@ -157,6 +158,7 @@ GtkScale.trough:insensitive,
                 0 -1 inset shade (@theme_bg_color, 0.8);
 }
 
+/* disable box shadow */
 .button:insensitive,
 .primary-toolbar GtkComboBox,
 .primary-toolbar .button *,
@@ -293,7 +295,7 @@ GtkComboBox.combobox-entry .button:insensitive,
     border-color: shade (@theme_bg_color, 0.8);
 }
 
-/* Middle button */
+/* middle button */
 .linked .entry,
 .linked .button,
 .linked .button:active,
@@ -310,7 +312,7 @@ GtkComboBox.combobox-entry .button:insensitive,
     border-radius: 0;
 }
 
-/* Leftmost button */
+/* leftmost button */
 .linked .entry:first-child,
 .linked .button:first-child,
 .linked .button:active:first-child,
@@ -329,7 +331,7 @@ GtkComboBox.combobox-entry .button:insensitive,
     border-top-right-radius: 0;
 }
 
-/* Rightmost button */
+/* rightmost button */
 .linked .entry:last-child,
 .linked .button:last-child,
 .linked .button:active:last-child,
@@ -347,7 +349,7 @@ GtkComboBox.combobox-entry .button:insensitive,
     border-top-left-radius: 0;
 }
 
-/* Linked single button */
+/* linked single button */
 .linked .entry:only-child,
 .linked .button:only-child,
 .linked .button:active:only-child,
@@ -834,7 +836,7 @@ GtkLabel:insensitive {
     padding: 3px 2px;
 }
 
-/* Workaround for lp:949368 */
+/* workaround for lp:949368 */
 GtkComboBox .menuitem * {
     color: @dark_fg_color;
 }
@@ -1089,6 +1091,7 @@ GtkScale.trough.vertical {
 .scale.highlight.bottom {
     background-image: none;
     background-color: @theme_selected_bg_color;
+    /* we will draw the border using box shadow for now */
     border-color: transparent;
 }
 
