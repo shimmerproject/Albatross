@@ -1590,6 +1590,14 @@ GtkTreeView row:nth-child(odd) {
     background-color: shade (@theme_base_color, 1.0);
 }
 
+/***********
+ * gtkhtml *
+ ***********/
+GtkHTML {
+    background-color: @theme_base_color;
+    color: @theme_text_color;
+}
+
 /************
  * viewport *
  ************/
