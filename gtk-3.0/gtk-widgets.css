@@ -419,8 +419,8 @@ column-header .button:active,
 column-header .button,
 .notebook column-header .button {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 1.24)),
-                                     color-stop (0.50, shade (@theme_bg_color, 1.15)),
+                                     from (shade (shade (@theme_bg_color, 1.09), 1.14)),
+                                     color-stop (0.50, shade (shade (@theme_bg_color, 1.01), 1.14)),
                                      to (shade (@theme_bg_color, 0.91)));
     border-color: shade (@theme_bg_color, 0.8);
 }
@@ -428,9 +428,9 @@ column-header .button,
 column-header .button:hover,
 .notebook column-header .button:hover {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_selected_bg_color, 1.24)),
-                                     color-stop (0.50, shade (@theme_selected_bg_color, 1.15)),
-                                     to (shade (@theme_selected_bg_color, 0.91)));
+                                     from (shade (shade (@theme_bg_color, 1.09), 1.18)),
+                                     color-stop (0.50, shade (shade (@theme_bg_color, 1.01), 1.18)),
+                                     to (shade (@theme_bg_color, 0.91)));
 }
 
 column-header:last-child .button {
