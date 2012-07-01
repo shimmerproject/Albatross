@@ -377,10 +377,9 @@ GtkComboBox.combobox-entry .button:insensitive,
 row:selected,
 row:selected:focus {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (shade (@theme_selected_bg_color, 0.92), 1.04)),
-                                     color-stop (0.49, shade (shade (@theme_selected_bg_color, 0.86), 1.04)),
-                                     color-stop (0.50, shade (@theme_selected_bg_color, 0.86)),
-                                     to (shade (@theme_selected_bg_color, 0.77)));
+                                     from (shade (@theme_selected_bg_color, 1.09)),
+                                     color-stop (0.50, shade (@theme_selected_bg_color, 1.01)),
+                                     to (shade (@theme_selected_bg_color, 0.91)));
     border-color: shade (@theme_selected_bg_color, 0.97);
     border-style: solid;
     border-width: 1px 0;
@@ -590,10 +589,9 @@ GtkIconView {
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focus {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (shade (@theme_selected_bg_color, 0.92), 1.04)),
-                                     color-stop (0.49, shade (shade (@theme_selected_bg_color, 0.86), 1.04)),
-                                     color-stop (0.50, shade (@theme_selected_bg_color, 0.86)),
-                                     to (shade (@theme_selected_bg_color, 0.77)));
+                                     from (shade (@theme_selected_bg_color, 1.09)),
+                                     color-stop (0.50, shade (@theme_selected_bg_color, 1.01)),
+                                     to (shade (@theme_selected_bg_color, 0.91)));
     border-radius: 2px;
     border-style: solid;
     border-width: 1px;
