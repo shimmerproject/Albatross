@@ -423,7 +423,8 @@ column-header .button,
                                      from (shade (shade (@theme_bg_color, 1.09), 1.14)),
                                      color-stop (0.50, shade (shade (@theme_bg_color, 1.01), 1.14)),
                                      to (shade (@theme_bg_color, 0.91)));
-    border-color: shade (@theme_bg_color, 0.8);
+    border-color: shade (@theme_bg_color, 0.9);
+    border-bottom-color: shade (@theme_bg_color, 0.8);
 }
 
 column-header .button:hover,
