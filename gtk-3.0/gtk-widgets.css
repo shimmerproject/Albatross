@@ -102,7 +102,8 @@ GtkWindow {
  * common effects *
  ******************/
 .button,
-.progressbar {
+.progressbar,
+GtkSwitch.slider {
     box-shadow: 1 1 inset alpha (@theme_base_color, 0.3),
                 -1 1 inset alpha (@theme_base_color, 0.3);
 }
@@ -1326,48 +1327,40 @@ GtkStatusbar {
  * switch *
  **********/
 GtkSwitch {
-    font: bold condensed 9;
     border-radius: 2px;
-    padding: 0;
+    padding: 2px;
 }
 
 GtkSwitch.trough {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 0.96)),
-                                     color-stop (0.50, shade (@theme_bg_color, 0.91)),
-                                     to (shade (@theme_bg_color, 0.96)));
-
+    background-image: none;
+    background-color: shade (@theme_bg_color, 0.85);
     color: @theme_fg_color;
     border-color: shade (@theme_bg_color, 0.7);
 }
 
 GtkSwitch.trough:active {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_selected_bg_color, 0.96)),
-                                     color-stop (0.50, shade (@theme_selected_bg_color, 0.91)),
-                                     to (shade (@theme_selected_bg_color, 0.96)));
-
+    background-image: none;
+    background-color: shade (@theme_selected_bg_color, 0.85);
     color: @theme_selected_fg_color;
     border-color: shade (@theme_selected_bg_color, 0.7);
 }
 
 GtkSwitch.trough:insensitive {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 0.96)),
-                                     color-stop (0.50, shade (@theme_bg_color, 0.91)),
-                                     to (shade (@theme_bg_color, 0.96)));
-
+    background-image: none;
+    background-color: shade (@theme_bg_color, 0.9);
     color: shade (@theme_bg_color, 0.7);
     border-color: shade (@theme_bg_color, 0.8);
 }
 
 GtkSwitch.slider {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 1.09)),
+                                     from (shade (shade (@theme_bg_color, 1.09), 1.04)),
+                                     color-stop (0.49, shade (shade (@theme_bg_color, 1.01), 1.04)),
                                      color-stop (0.50, shade (@theme_bg_color, 1.01)),
                                      to (shade (@theme_bg_color, 0.91)));
     border-style: solid;
     border-color: shade (@theme_bg_color, 0.7);
+    border-radius: 0;
 }
 
 GtkSwitch.slider:insensitive {
