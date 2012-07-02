@@ -5,14 +5,20 @@ URL: http://shimmerproject.org/projects/albatross/
 Copyright 2009–2012 James Schriver, Steve Dodier, Pasi Lallinaho, Mads Rosendahl Hansen
 Albatross is dual-licensed as GPLv2 or later and CC-BY-SA 3.0 or later.
 
+Contributors:
+ * Satyajit Sahoo
+ * Simon Steinbeiß
+
 Desktop Suite for Xfce.
-Albatross is the default theme in Xubuntu 9.10 and 10.04.
+Albatross was the default theme in Xubuntu 9.10 and 10.04.
 
 The Albatross desktop suite includes:
-– GTK+ theme
-– xfwm theme
+– GTK+2/3 theme
+– Xfwm4 theme
+– Metacity/Mutter theme
+– Unity support
+– Pantheon support
 – usplash and xplash themes
 – Wallpaper
 
-The Shearwater GTK+ theme (a proposed "new" Albatross theme) is also included in this repository.
-
+The Shearwater GTK+ theme (a formerly proposed "new" Albatross theme) is also included in this repository.
