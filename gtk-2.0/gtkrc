@@ -79,7 +79,7 @@ style "default" {
 	engine "murrine"
 	{
 		#options
-		animation           = TRUE  # FALSE = disabled, TRUE = enabled
+		animation           = FALSE  # FALSE = disabled, TRUE = enabled
 		colorize_scrollbar  = TRUE  # FALSE = disabled, TRUE = enabled
 		contrast            = 1.0   # 0.8 for less contrast, more than 1.0 for more contrast on borders
 		glazestyle          = 0     # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
