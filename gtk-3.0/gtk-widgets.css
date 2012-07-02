@@ -1088,7 +1088,7 @@ GtkScale.trough.vertical {
 .scale.highlight.left,
 .scale.highlight.bottom {
     background-image: none;
-    background-color: @theme_selected_bg_color;
+    background-color: shade (@theme_selected_bg_color, 1.04);
     /* we will draw the border using box shadow for now */
     border-color: transparent;
 }
