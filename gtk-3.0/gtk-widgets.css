@@ -114,8 +114,8 @@ GtkSwitch.slider {
 }
 
 .button:active {
-    box-shadow: inset 1 1 alpha (@dark_bg_color, 0.1),
-                inset -1 -1 alpha (@dark_bg_color, 0.1);
+    box-shadow: inset 1px 1px alpha (@dark_bg_color, 0.1),
+                inset -1px -1px alpha (@dark_bg_color, 0.1);
 }
 
 .entry,
