@@ -104,63 +104,63 @@ GtkWindow {
 .button,
 .progressbar,
 GtkSwitch.slider {
-    box-shadow: 1 1 inset alpha (@theme_base_color, 0.3),
-                -1 1 inset alpha (@theme_base_color, 0.3);
+    box-shadow: inset 1px 1px alpha (@theme_base_color, 0.3),
+                inset -1px 1px alpha (@theme_base_color, 0.3);
 }
 
 .progressbar.vertical {
-    box-shadow: 1 1 inset alpha (@theme_base_color, 0.3),
-                1 -1 inset alpha (@theme_base_color, 0.3);
+    box-shadow: inset 1px 1px alpha (@theme_base_color, 0.3),
+                inset 1px -1px alpha (@theme_base_color, 0.3);
 }
 
 .button:active {
-    box-shadow: 1 1 inset alpha (@dark_bg_color, 0.1),
-                -1 -1 inset alpha (@dark_bg_color, 0.1);
+    box-shadow: inset 1 1 alpha (@dark_bg_color, 0.1),
+                inset -1 -1 alpha (@dark_bg_color, 0.1);
 }
 
 .entry,
 .trough {
-    box-shadow: 1 1 inset alpha (@dark_bg_color, 0.05),
-                -1 -1 inset alpha (@dark_bg_color, 0.05);
+    box-shadow: inset 1px 1px alpha (@dark_bg_color, 0.05),
+                inset -1px -1px alpha (@dark_bg_color, 0.05);
 }
 
 .entry:focus {
-    box-shadow: 1 2 inset alpha (@theme_selected_bg_color, 0.3),
-                1 1 inset alpha (@theme_selected_bg_color, 0.3),
-                -1 -1 inset alpha (@theme_selected_bg_color, 0.3);
+    box-shadow: inset 1px 2px alpha (@theme_selected_bg_color, 0.3),
+                inset 1px 1px alpha (@theme_selected_bg_color, 0.3),
+                inset -1px -1px alpha (@theme_selected_bg_color, 0.3);
 }
 
 .menuitem:hover {
-    box-shadow: 1 1 inset alpha (@theme_selected_bg_color, 0.1),
-                -1 1 inset alpha (@theme_selected_bg_color, 0.1);
+    box-shadow: inset 1px 1px alpha (@theme_selected_bg_color, 0.1),
+                inset -1px 1px alpha (@theme_selected_bg_color, 0.1);
 }
 
 /* draw borders using box shadow */
 GtkScale.slider,
 GtkScale.trough {
-    box-shadow: 1 0 inset shade (@theme_bg_color, 0.7),
-                0 1 inset shade (@theme_bg_color, 0.7),
-                -1 0 inset shade (@theme_bg_color, 0.7),
-                0 -1 inset shade (@theme_bg_color, 0.7);
+    box-shadow: inset 1px 0px shade (@theme_bg_color, 0.7),
+                inset 0px 1px shade (@theme_bg_color, 0.7),
+                inset -1px 0px shade (@theme_bg_color, 0.7),
+                inset 0px -1px shade (@theme_bg_color, 0.7);
 }
 
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left,
 .scale.highlight.bottom {
-    box-shadow: 1 0 inset shade (@theme_selected_bg_color, 0.7),
-                0 1 inset shade (@theme_selected_bg_color, 0.7),
-                -1 0 inset shade (@theme_selected_bg_color, 0.7),
-                0 -1 inset shade (@theme_selected_bg_color, 0.7);
+    box-shadow: inset 1px 0px shade (@theme_selected_bg_color, 0.7),
+                inset 0px 1px shade (@theme_selected_bg_color, 0.7),
+                inset -1px 0px shade (@theme_selected_bg_color, 0.7),
+                inset 0px -1px shade (@theme_selected_bg_color, 0.7);
 }
 
 GtkScale.slider:insensitive,
 GtkScale.trough:insensitive,
 .scale.highlight.left:insensitive,
 .scale.highlight.bottom:insensitive {
-    box-shadow: 1 0 inset shade (@theme_bg_color, 0.8),
-                0 1 inset shade (@theme_bg_color, 0.8),
-                -1 0 inset shade (@theme_bg_color, 0.8),
-                0 -1 inset shade (@theme_bg_color, 0.8);
+    box-shadow: inset 1px 0px shade (@theme_bg_color, 0.8),
+                inset 0px 1px shade (@theme_bg_color, 0.8),
+                inset -1px 0px shade (@theme_bg_color, 0.8),
+                inset 0px -1px shade (@theme_bg_color, 0.8);
 }
 
 /* disable box shadow */
@@ -887,8 +887,8 @@ GtkComboBox .menuitem *:hover {
 .menuitem GtkCalendar.button,
 .menuitem GtkCalendar.header,
 .menuitem GtkCalendar.view {
-	background-color: transparent;
-	background-image: none;
+    background-color: transparent;
+    background-image: none;
 }
 
 .menuitem .entry {
@@ -1101,14 +1101,14 @@ GtkScale.trough.vertical {
 GtkScale.trough,
 .menubar .menuitem .scale.highlight.left,
 .scale.highlight.left {
-	border-width: 5px 0;
-	border-radius: 7px;
+    border-width: 5px 0;
+    border-radius: 7px;
 }
 
 GtkScale.trough.vertical,
 .scale.highlight.bottom {
-	border-width: 0 5px;
-	border-radius: 7px;
+    border-width: 0 5px;
+    border-radius: 7px;
 }
 
 
