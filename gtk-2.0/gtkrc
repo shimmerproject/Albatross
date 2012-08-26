@@ -1,6 +1,7 @@
 # Albatross Desktop Theme
-# by: James Schriver<jws141@gmail.com>, Steve Dodier<sidnioulz@gmail.com>
-# inspired by Shiki-Wise by perfectska04 (Victor C.)
+# 1.x: James Schriver <jws141@gmail.com>, Steve Dodier <sidnioulz@gmail.com>
+#      Inspired by Shiki-Wise by perfectska04 (Victor C.)
+# 2.x: Pasi Lallinaho <pasi@shimmerproject.org>
           
 gtk_color_scheme = "fg_color:#202020\nbg_color:#EDEDED\nbase_color:#fff\ntext_color:#444\nselected_bg_color:#A9B7C4\nselected_fg_color:#333333\ntooltip_bg_color:#D6DCE4\ntooltip_fg_color:#222222"
 
