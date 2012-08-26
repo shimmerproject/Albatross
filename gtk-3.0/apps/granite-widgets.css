@@ -253,7 +253,7 @@ GraniteWidgetsPopOver .entry {
     background-image: -gtk-gradient(linear,
                      left top, left bottom,
                      from (rgba(0, 0, 0, 0.3)),
-                     to (transparent)));
+                     to (transparent));
 }
 
 .composited-indicator,
