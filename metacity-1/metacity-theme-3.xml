@@ -229,7 +229,7 @@
 <draw_ops name="close_focused">
 	<image filename="close_focused_normal.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -237,7 +237,7 @@
 <draw_ops name="close_focused_prelight">
 	<image filename="close_focused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -245,7 +245,7 @@
 <draw_ops name="close_focused_pressed">
 	<image filename="close_focused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -253,7 +253,7 @@
 <draw_ops name="close_unfocused">
 	<image filename="close_unfocused.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -261,7 +261,7 @@
 <draw_ops name="close_unfocused_prelight">
 	<image filename="close_unfocused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -269,7 +269,7 @@
 <draw_ops name="close_unfocused_pressed">
 	<image filename="close_unfocused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -277,7 +277,7 @@
 <draw_ops name="maximize_focused">
 	<image filename="maximize_focused_normal.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -285,7 +285,7 @@
 <draw_ops name="maximize_focused_prelight">
 	<image filename="maximize_focused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -293,7 +293,7 @@
 <draw_ops name="maximize_focused_pressed">
 	<image filename="maximize_focused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -301,7 +301,7 @@
 <draw_ops name="maximize_unfocused">
 	<image filename="maximize_unfocused.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -309,7 +309,7 @@
 <draw_ops name="maximize_unfocused_prelight">
 	<image filename="maximize_unfocused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -317,7 +317,7 @@
 <draw_ops name="maximize_unfocused_pressed">
 	<image filename="maximize_unfocused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -325,7 +325,7 @@
 <draw_ops name="unmaximize_focused">
 	<image filename="unmaximize_focused_normal.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -333,7 +333,7 @@
 <draw_ops name="unmaximize_focused_prelight">
 	<image filename="unmaximize_focused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -341,7 +341,7 @@
 <draw_ops name="unmaximize_focused_pressed">
 	<image filename="unmaximize_focused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -349,7 +349,7 @@
 <draw_ops name="unmaximize_unfocused">
 	<image filename="unmaximize_unfocused.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -357,7 +357,7 @@
 <draw_ops name="unmaximize_unfocused_prelight">
 	<image filename="unmaximize_unfocused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -365,7 +365,7 @@
 <draw_ops name="unmaximize_unfocused_pressed">
 	<image filename="unmaximize_unfocused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -373,7 +373,7 @@
 <draw_ops name="minimize_focused">
 	<image filename="minimize_focused_normal.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -381,7 +381,7 @@
 <draw_ops name="minimize_focused_prelight">
 	<image filename="minimize_focused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -389,7 +389,7 @@
 <draw_ops name="minimize_focused_pressed">
 	<image filename="minimize_focused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -397,7 +397,7 @@
 <draw_ops name="minimize_unfocused">
 	<image filename="minimize_unfocused.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -405,7 +405,7 @@
 <draw_ops name="minimize_unfocused_prelight">
 	<image filename="minimize_unfocused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -413,7 +413,7 @@
 <draw_ops name="minimize_unfocused_pressed">
 	<image filename="minimize_unfocused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -421,7 +421,7 @@
 <draw_ops name="shade_focused">
 	<image filename="shade_focused_normal.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -429,7 +429,7 @@
 <draw_ops name="shade_focused_prelight">
 	<image filename="shade_focused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -437,7 +437,7 @@
 <draw_ops name="shade_focused_pressed">
 	<image filename="shade_focused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -445,7 +445,7 @@
 <draw_ops name="shade_unfocused">
 	<image filename="shade_unfocused.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -453,7 +453,7 @@
 <draw_ops name="shade_unfocused_prelight">
 	<image filename="shade_unfocused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -461,7 +461,7 @@
 <draw_ops name="shade_unfocused_pressed">
 	<image filename="shade_unfocused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -469,7 +469,7 @@
 <draw_ops name="unshade_focused">
 	<image filename="unshade_focused_normal.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -477,7 +477,7 @@
 <draw_ops name="unshade_focused_prelight">
 	<image filename="unshade_focused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -485,7 +485,7 @@
 <draw_ops name="unshade_focused_pressed">
 	<image filename="unshade_focused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -493,7 +493,7 @@
 <draw_ops name="unshade_unfocused">
 	<image filename="unshade_unfocused.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -501,7 +501,7 @@
 <draw_ops name="unshade_unfocused_prelight">
 	<image filename="unshade_unfocused_prelight.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -509,7 +509,7 @@
 <draw_ops name="unshade_unfocused_pressed">
 	<image filename="unshade_unfocused_pressed.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="(height - object_height) / 2 - 3"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
