@@ -325,6 +325,9 @@ class "GtkToolbar" style "toolbar"
 class "GtkHandleBox" style "toolbar"
 
 style "panel" = "dark" {
+	xthickness = 0
+	ythickness = 0
+
 ## Default style
 #	bg[NORMAL] = "#292B2C"
 	bg[NORMAL] = "#18191A"
