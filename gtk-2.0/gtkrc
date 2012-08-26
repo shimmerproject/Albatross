@@ -81,10 +81,10 @@ style "default" {
 		#options
 		animation           = FALSE  # FALSE = disabled, TRUE = enabled
 		colorize_scrollbar  = TRUE  # FALSE = disabled, TRUE = enabled
-		contrast            = 1.0   # 0.8 for less contrast, more than 1.0 for more contrast on borders
+		contrast            = 0.7   # 0.8 for less contrast, more than 1.0 for more contrast on borders
 		glazestyle          = 0     # 0 = flat highlight, 1 = curved highlight, 2 = concave style, 3 = top curved highlight, 4 = beryl highlight
-        glow_shade          = 1.2
-        glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+      glow_shade          = 1.2
+      glowstyle           = 0     # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
 		gradient_shades     = {1.09, 1.01, 1.01, 0.91}
 		highlight_shade     = 1.04  # set highlight amount for buttons or widgets
 		lightborder_shade   = 1.2   # sets lightborder amount for buttons or widgets
@@ -95,7 +95,7 @@ style "default" {
 		menubarstyle        = 2     # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle       = 1     # 0 = flat, 1 = glassy, 2 = striped
 		menustyle           = 0     # 0 = no vertical menu stripe, 1 = display vertical menu stripe
-        progressbarstyle    = 1     # 0 = flat, 1 = striped, 2 = blocks
+      progressbarstyle    = 1     # 0 = flat, 1 = striped, 2 = blocks
 		reliefstyle 	    = 2     # 0 = flat, 1 = inset, 2 = shadow
 		rgba		        = FALSE  # FALSE = disabled, TRUE = enabled
 		roundness           = 2     # 0 = squared, 1 = old default, more will increase roundness
@@ -177,12 +177,7 @@ style "scrollbar" {
     fg[ACTIVE] = darker (@text_color)
     fg[PRELIGHT] = shade (1.1, @text_color)
     fg[INSENSITIVE] = darker (@bg_color)
-#	bg[NORMAL] = shade (.9, @bg_color)
-#	bg[INSENSITIVE] = @bg_color
-#	bg[PRELIGHT] = shade (1.18, @bg_color)
-#	bg[ACTIVE] = shade (0.85, @bg_color)
-#	bg[SELECTED] = shade (.4, @bg_color)
-#	
+
 	engine "murrine" 
     {
 		contrast = 0.4
@@ -281,7 +276,7 @@ style "menu-item" = "dark"
 
 	bg[PRELIGHT] = shade (.8, @selected_bg_color)
 	bg[SELECTED] = shade (.8, @selected_bg_color)
-	fg[PRELIGHT]      = "#141F25"
+	fg[PRELIGHT] = "#141F25"
 
 	engine "murrine" 
     {
@@ -330,12 +325,14 @@ class "GtkHandleBox" style "toolbar"
 
 style "panel" = "dark" {
 ## Default style
-	bg[NORMAL] = "#292B2C"
+#	bg[NORMAL] = "#292B2C"
+	bg[NORMAL] = "#18191A"
 
 ## Style 2 : darker active tab and light orange prelight tab
 	fg[PRELIGHT] = shade(1.3, @selected_bg_color)
+	bg[PRELIGHT] = "#232526"
 	fg[ACTIVE] = "#fff"
-	bg[ACTIVE] = "#1A1A1D"
+	bg[ACTIVE] = "#0C0C0D"
 	bg[PRELIGHT] = "#444"
 	text[NORMAL] = mix (0.7,  '#efffff', @fg_color)
 }
@@ -435,6 +432,8 @@ widget_class "*.<GtkTreeView>.<GtkButton>" style "treeview-header"
 widget_class "*.<GtkCTree>.<GtkButton>" style "treeview-header"
 widget_class "*.<GtkList>.<GtkButton>" style "treeview-header"
 widget_class "*.<GtkCList>.<GtkButton>" style "treeview-header"
+widget_class "*.<GtkCMCTree>.<GtkButton>"    style "treeview-header" # Claws-Mail treeview-headers
+widget_class "*.<GtkCMCList>.<GtkButton>"    style "treeview-header" # Claws-Mail treeview-headers
 
 widget "gtk-tooltip*" style "tooltips"
 
