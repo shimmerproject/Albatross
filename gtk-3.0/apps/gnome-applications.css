@@ -4,9 +4,9 @@
 PanelWidget,
 PanelApplet,
 PanelToplevel {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (shade (@dark_bg_color, 1.05)));
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 1.5)),
+                                     to (shade(@dark_bg_color, 1.05)));
     padding: 0;
 
     color: @dark_fg_color;
@@ -18,9 +18,9 @@ PanelApplet {
 
 PanelSeparator {
     border-width: 0;
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (shade (@dark_bg_color, 1.05)));
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 1.5)),
+                                     to (shade(@dark_bg_color, 1.05)));
 
     color: @dark_fg_color;
 }
@@ -32,27 +32,27 @@ PanelMenuBar.menubar,
 PanelMenuBar.menubar.menuitem {
     -PanelMenuBar-icon-visible: true;
 
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (shade (@dark_bg_color, 1.05)));
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 1.5)),
+                                     to (shade(@dark_bg_color, 1.05)));
 }
 
 PanelAppletFrame { 
     background-color: @dark_bg_color;
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (shade (@dark_bg_color, 1.05)));
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 1.5)),
+                                     to (shade(@dark_bg_color, 1.05)));
     border-width: 0;
 }
 
 PanelApplet .button {
     -GtkButton-inner-border: 2;
 
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.5)),
-                                     to (shade (@dark_bg_color, 1.05)));
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 1.5)),
+                                     to (shade(@dark_bg_color, 1.05)));
 
-    border-color: shade (@dark_bg_color, 0.7);
+    border-color: shade(@dark_bg_color, 0.7);
     border-radius: 0;
     border-width: 0 1px 0 1px;
 
@@ -63,25 +63,25 @@ PanelApplet .button {
 
 PanelApplet .button:prelight:active,
 PanelApplet .button:active {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 0.85)),
-                                     to (shade (@dark_bg_color, 1.0))); 
-    border-color: shade (@dark_bg_color, 0.7);
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 0.85)),
+                                     to (shade(@dark_bg_color, 1.0))); 
+    border-color: shade(@dark_bg_color, 0.7);
     border-radius: 0;
     border-width: 0 1px 0 1px;
 }
 
 PanelApplet .button:prelight {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.7)),
-                                     to (shade (@dark_bg_color, 1.25)));
-    border-color: shade (@dark_bg_color, 0.7);
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(@dark_bg_color, 1.7)),
+                                     to (shade(@dark_bg_color, 1.25)));
+    border-color: shade(@dark_bg_color, 0.7);
     border-radius: 0;
     border-width: 0 1px 0 1px;
 }
 
 ClockBox {
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.6);
+    text-shadow: 0 -1px shade(@dark_bg_color, 0.6);
 }
 
 WnckPager, WnckTasklist {
@@ -107,14 +107,14 @@ NautilusWindow * {
 
 .nautilus-desktop.nautilus-canvas-item:active {
     background-image: none;
-    background-color: alpha (@theme_bg_color, 0.84);
+    background-color: alpha(@theme_bg_color, 0.84);
 
     color: @theme_fg_color;
 }
 
 .nautilus-desktop.nautilus-canvas-item:selected {
     background-image: none;
-    background-color: alpha (@theme_selected_bg_color, 0.84);
+    background-color: alpha(@theme_selected_bg_color, 0.84);
 
     color: @theme_selected_fg_color;
 }
@@ -125,55 +125,11 @@ NautilusWindow * {
     text-shadow: none;
 }
 
-/* browser window */
-NautilusTrashBar.info,
-NautilusXContentBar.info,
-NautilusSearchBar.info,
-NautilusQueryEditor.info {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@info_bg_color, 1.09)),
-                                     color-stop (0.5, shade (@info_bg_color, 1.01)),
-                                     to (shade (@info_bg_color, 0.91)));
-    border-bottom-color: shade (@info_bg_color, 0.7);
-    border-radius: 0;
-    border-style: solid;
-    border-width: 0 0 1px 0;
-}
-
-.nautilus-cluebar-label {
-    font: bold;
-    color: @info_fg_color;
-}
-
-NautilusLocationEntry.entry {
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-NautilusQueryEditor .button,
-NautilusQueryEditor .button:focus,
-NautilusQueryEditor .button:active,
-NautilusQueryEditor .button:active:focus,
-NautilusSearchBar .entry,
-NautilusSearchBar .entry:focus {
-    border-color: darker (@info_bg_color);
-    border-style: solid;
-    border-width: 1px;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-/* inactive pane */
-.nautilus-inactive-pane .view,
-.nautilus-inactive-pane .notebook {
-background-color: shade (@theme_base_color, 0.97);
-}
-
 /******************
  * gnome terminal *
  ******************/
 TerminalScreen {
-    background-color: shade (@theme_fg_color, 0.95);
+    background-color: shade(@theme_fg_color, 0.95);
     color: #fff;
 
     -TerminalScreen-background-darkness: 0.9;
