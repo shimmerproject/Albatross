@@ -791,16 +791,21 @@ GtkLabel:insensitive {
 /********
  * menu *
  ********/
-.menu {
+GtkTreeMenu.menu,
+GtkMenuToolButton.menu,
+GtkComboBox .menu {
     background-color: @dark_bg_color;
-    border-width: 0;
-    padding: 0;
-
-    color: @dark_fg_color;
 }
 
-.menu:selected {
-    background-color: @theme_selected_bg_color;
+.primary-toolbar .button .menu,
+.toolbar .menu,
+.toolbar .primary-toolbar .menu,
+.menu {
+    background-color: @dark_bg_color;
+    border-style: none;
+    border-radius: 0;
+    padding: 0;
+    color: @dark_fg_color;
 }
 
 .menu.button:hover,
@@ -820,21 +825,18 @@ GtkLabel:insensitive {
     -GtkWidget-window-dragging: true;
 
     background-color: shade(@theme_fg_color, 0.95);
-    background-image: none;
-    border-width: 0;
-
+    border-style: none;
     color: @dark_fg_color;
 }
 
 /***************
  * menubaritem *
  ***************/
-.menubar.menuitem {
-    background-color: @dark_bg_color;
+.menubar.menuitem,
+.menubar .menuitem {
     border-radius: 2px 2px 0 0;
     border-width: 1px 1px 0 1px;
-
-    color: @dark_fg_color;
+    padding: 3px 5px 3px 5px;
 }
 
 .menubar.menuitem:hover,
@@ -845,32 +847,34 @@ GtkLabel:insensitive {
                                      color-stop (0.50, shade(@theme_selected_bg_color, 0.86)),
                                      to (shade(@theme_selected_bg_color, 0.77)));
 
-
-    color: @theme_selected_fg_color;
     border-color: shade(shade(@theme_selected_bg_color, 0.77), 0.85);
+}
+
+.menubar .menuitem *:hover {
+    color: @theme_selected_fg_color;
 }
 
 /************
  * menuitem *
  ************/
-.menuitem {
+GtkTreeMenu .menuitem {
+    padding: 0;
+
+    border-style: none;
+}
+
+GtkTreeMenu .menuitem * {
     color: @dark_fg_color;
+}
+
+.menu .menuitem {
     border-radius: 2px;
     border-style: solid;
     border-width: 1px;
     padding: 3px 2px;
 }
 
-/* workaround for lp:949368 */
-GtkComboBox .menuitem * {
-    color: @dark_fg_color;
-}
-
-GtkComboBox .menuitem *:hover {
-    color: @theme_selected_fg_color;
-}
-
-.menuitem:hover,
+.menu .menuitem:active,
 .menu .menuitem:hover {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(shade(@theme_selected_bg_color, 0.92), 1.04)),
@@ -878,12 +882,19 @@ GtkComboBox .menuitem *:hover {
                                      color-stop (0.50, shade(@theme_selected_bg_color, 0.86)),
                                      to (shade(@theme_selected_bg_color, 0.77)));
 
-    color: @theme_selected_fg_color;
+    border-radius: 2px;
     border-color: shade(shade(@theme_selected_bg_color, 0.77), 0.85);
 }
 
-.menuitem:insensitive,
-.menuitem *:insensitive {
+.menu .menuitem:active,
+.menu .menuitem *:active,
+.menu .menuitem:hover,
+.menu .menuitem *:hover {
+    color: @theme_selected_fg_color;
+}
+
+.menu .menuitem:insensitive,
+.menu .menuitem *:insensitive {
     color: mix(@dark_fg_color, @dark_bg_color, 0.5);
 }
 
@@ -930,6 +941,15 @@ GtkComboBox .menuitem *:hover {
 
 .menuitem .accelerator:insensitive {
     color: alpha(mix(@dark_fg_color, @dark_bg_color, 0.5), 0.6);
+}
+
+/* workaround for lp:949368 */
+GtkComboBox .menuitem * {
+    color: @dark_fg_color;
+}
+
+GtkComboBox .menuitem *:hover {
+    color: @theme_selected_fg_color;
 }
 
 /************
@@ -1528,8 +1548,6 @@ GtkTextView {
     border-radius: 2px;
     border-width: 1px;
     padding: 2px;
-
-    color: @theme_fg_color;
 }
 
 .primary-toolbar .raised .button,
