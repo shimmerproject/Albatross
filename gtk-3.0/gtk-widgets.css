@@ -1520,7 +1520,10 @@ GtkTextView {
  * toolbar *
  ***********/
 .toolbar {
+    background-color: transparent;
     border-style: none;
+    padding: 2px;
+    color: @theme_fg_color;
 }
 
 /* primary-toolbar */
