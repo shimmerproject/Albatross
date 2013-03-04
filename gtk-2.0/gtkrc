@@ -339,6 +339,8 @@ style "panel" = "dark" {
 	bg[ACTIVE] = "#0C0C0D"
 	bg[PRELIGHT] = "#444"
 	text[NORMAL] = mix (0.7,  '#efffff', @fg_color)
+	text[PRELIGHT] = shade(1.3, @selected_bg_color)
+	text[ACTIVE] = "#fff"
 }
 
 style "panel-entry"
