@@ -19,7 +19,7 @@ style "default" {
 	GtkRadioButton::indicator-size = 14
 	GtkPaned::handle-size = 6
 
-	GtkRange::trough-border = 1
+	GtkRange::trough-border = 0
 	GtkRange::slider-width = 13
 	GtkRange::stepper-size = 12
 
