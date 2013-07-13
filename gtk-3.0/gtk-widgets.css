@@ -6,7 +6,6 @@
     engine: none;
 
     background-clip: padding-box;
-    background-origin: border-box;
     border-width: 1px;
 
     -GtkArrow-arrow-scaling: 0.6;
@@ -70,7 +69,7 @@ GtkWindow {
 * {
     /* inherit the color from parent by default */
     color: inherit;
-    background-color: @theme_bg_color;
+    background-color: inherit;
 }
 
 /**********
@@ -840,7 +839,7 @@ GtkComboBox .menu {
     border-width: 1px 1px 0 1px;
     border-style: solid;
     border-color: transparent;
-    background-color: shade(@theme_fg_color, 0.95);
+    background-color: transparent;
     background-image: none;
     color: @dark_fg_color;
 }
@@ -879,7 +878,7 @@ GtkTreeMenu .menuitem * {
     border-style: solid;
     border-color: transparent;
     border-radius: 0;
-    background-color: @dark_bg_color;
+    background-color: transparent;
     background-image: none;
     color: @dark_fg_color;
 
@@ -1393,7 +1392,6 @@ GtkScrolledWindow.frame {
     -GtkMenuItem-horizontal-padding: 0;
     -GtkWidget-separator-height: 1;
 
-    background-color: transparent;
     border-style: none;
     color: shade(@dark_bg_color, 0.9);
 }
