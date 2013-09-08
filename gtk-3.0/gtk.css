@@ -37,7 +37,7 @@
 @define-color error_color #cc0000;
 
 /* widget colors */
-@define-color menubar_bg_color shade(@theme_fg_color, 0.95);
+@define-color menubar_bg_color #1e1e1e;
 @define-color menubar_fg_color mix(@theme_fg_color, #efffff, 0.7);
 @define-color toolbar_bg_color #dedede;
 @define-color toolbar_fg_color #202020;
@@ -52,11 +52,11 @@
 @define-color osd_bg alpha(@osd_base, 0.8);
 
 /* window manager colors */
-@define-color wm_bg shade(@theme_fg_color, 0.95);
-@define-color wm_title_focused mix(@dark_fg_color, @dark_bg_color, 0.1);
-@define-color wm_title_unfocused mix(@dark_fg_color, @dark_bg_color, 0.6);
-@define-color wm_border_focused shade(@theme_bg_color, 0.5);
-@define-color wm_border_unfocused shade(@theme_bg_color, 0.5);
+@define-color wm_bg #1e1e1e;
+@define-color wm_title_focused #ededed;
+@define-color wm_title_unfocused #626262;
+@define-color wm_border_focused #3f3f3f;
+@define-color wm_border_unfocused #3f3f3f;
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
