@@ -1,13 +1,14 @@
 UnityPanelWidget,
 .unity-panel {
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@dark_bg_color, 1.5)),
-                                     to (shade(@dark_bg_color, 1.04)));
-    border-top-color: shade(@dark_bg_color, 1.6);
+                                     from (shade(@panel_bg_color, 1.5)),
+                                     to (shade(@panel_bg_color, 1.04)));
+
+    border-top-color: shade(@panel_bg_color, 1.6);
     border-style: solid;
     border-width: 1px 0 0 0;
 
-    color: @dark_fg_color;
+    color: @panel_fg_color;
 }
 
 .unity-panel.menubar,
@@ -18,7 +19,7 @@ UnityPanelWidget,
 .unity-panel .menuitem {
     border-width: 1px 1px 0 1px;
 
-    icon-shadow: 0 -1px shade(@dark_bg_color, 0.7);
+    icon-shadow: 0 -1px shade(@panel_bg_color, 0.7);
 }
 
 .unity-panel.menubar.menuitem:hover,

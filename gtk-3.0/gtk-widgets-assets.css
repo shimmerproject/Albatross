@@ -18,6 +18,7 @@
 /*******************
  * check and radio *
  *******************/
+/* draw regular check and radio items using our assets */
 .check,
 .check row:selected,
 .check row:selected:focus {
@@ -38,8 +39,7 @@
 
 .check:active:insensitive,
 .check row:selected:active:insensitive,
-.check row:selected:focus:active:insensitive
-{
+.check row:selected:focus:active:insensitive {
     background-image: url("assets/checkbox-checked-insensitive.png");
 }
 
@@ -103,6 +103,11 @@
     background-image: url("assets/menuitem-checkbox-checked-insensitive.png");
 }
 
+.menuitem.check:inconsistent:hover,
+.menuitem.radio:inconsistent:hover {
+    background-image: url("assets/menuitem-checkbox-mixed-selected.png");
+}
+
 .menuitem.check:inconsistent,
 .menuitem.radio:inconsistent {
     background-image: url("assets/menuitem-checkbox-mixed.png");
@@ -111,11 +116,6 @@
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
     background-image: url("assets/menuitem-checkbox-mixed-insensitive.png");
-}
-
-.menuitem.check:inconsistent:hover,
-.menuitem.radio:inconsistent:hover {
-    background-image: url("assets/menuitem-checkbox-mixed-selected.png");
 }
 
 .menuitem.radio:active {
@@ -128,4 +128,12 @@
 
 .menuitem.radio:active:insensitive {
     background-image: url("assets/menuitem-radio-checked-insensitive.png");
+}
+
+GtkIconView.content-view.cell.check {
+    background-image: url("assets/grid-selection-unchecked.png");
+}
+
+GtkIconView.content-view.cell.check:active {
+    background-image: url("assets/grid-selection-checked.png");
 }
