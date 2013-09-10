@@ -303,6 +303,7 @@ GtkAssistant .sidebar {
 }
 
 row:selected,
+row:selected:hover,
 row:selected:focus {
     border-width: 1px 0;
     border-style: solid;
@@ -826,7 +827,7 @@ GtkInfoBar {
 
 .view.dim-label,
 .dim-label {
-	color: alpha(currentColor, 0.5);
+    color: alpha(currentColor, 0.5);
 }
 
 .dnd {
@@ -3263,6 +3264,7 @@ GtkBubbleWindow .toolbar {
     background: none;
 }
 
+/*
 .titlebar .right .titlebutton:first-child {
     border-left: 1px solid shade(@theme_bg_color, 0.9);
 }
@@ -3276,6 +3278,7 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .left .titlebutton:first-child {
 }
+*/
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
