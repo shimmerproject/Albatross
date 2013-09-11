@@ -11,7 +11,7 @@ XfceHeading {
 
 .xfce4-panel .button {
     border-radius: 0;
-    padding: 1;
+    padding: 1px;
 }
 
 .xfce4-panel .button:active {
@@ -48,6 +48,7 @@ XfceHeading {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(@theme_selected_bg_color, 1.1)),
                                      to (shade(@theme_selected_bg_color, 0.9)));
+}
 
 .xfce4-panel .menu GtkLabel:hover,
 .xfce4-panel .menu GtkImage:hover {
