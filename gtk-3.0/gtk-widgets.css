@@ -1960,18 +1960,18 @@ GtkColorButton.button {
  * header-bar *
  **************/
 .header-bar {
-    padding: 2px;
+    padding: 4px;
     border-width: 0 0 1px;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.8);
 }
 
 .header-bar .button.text-button {
-    padding: 2px 4px;
+    padding: 4px;
 }
 
 .header-bar .button.image-button {
-    padding: 4px 3px 3px 4px;
+    padding: 6px;
 }
 
 .header-bar .title {
@@ -1986,7 +1986,7 @@ GtkColorButton.button {
  * toolbar *
  ***********/
 .toolbar {
-    padding: 2px;
+    padding: 4px;
     border-style: none;
     background-color: @toolbar_bg_color;
     background-image: none;
@@ -3247,21 +3247,24 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton {
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 2px;
-    padding: 5px 5px 6px 5px;
+    border-style: none;
+    padding: 4px;
     background: none;
-    color: @theme_fg_color;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.3);
+    box-shadow: none;
 }
 
 .titlebar .titlebutton:hover {
     background: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.2);
+    box-shadow: none;
 }
 
-.titlebar .titlebutton:active {
+.titlebar .titlebutton:active,
+.titlebar .titlebutton:active:hover {
     background: none;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
+    box-shadow: none;
 }
 
 /*
@@ -3282,20 +3285,20 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: alpha(@theme_fg_color, 0.7);
+    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
 }
 
 .window-frame {
-    border-width: 1px;
-    border-style: solid;
-    border-color: darker(@theme_bg_color);
+    border-style: none;
     border-radius: 2px 2px 0 0;
-    box-shadow: 0 2px 8px 3px alpha(black, 0.7);
+    box-shadow: 0 0 0 1px alpha(black, 0.2),
+                0 3px 7px alpha(black, 0.7);
 
     /* this is used for the resize cursor area */
     margin: 10px;
 }
 
 .window-frame:backdrop {
-    box-shadow: 0 2px 5px 1px alpha(black, 0.7);
+    box-shadow: 0 0 0 1px alpha(black, 0.2),
+                0 3px 5px alpha(black, 0.5);
 }
