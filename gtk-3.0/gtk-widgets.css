@@ -3219,7 +3219,7 @@ GtkBubbleWindow .toolbar {
 .titlebar {
     border-radius: 2px 2px 0 0;
     background-image: none;
-    background-color: @theme_bg_color;
+    background-color: @toolbar_bg_color;
     text-shadow: none;
 }
 
@@ -3238,7 +3238,7 @@ GtkBubbleWindow .toolbar {
 
 .titlebar:backdrop {
     background-image: none;
-    background-color: @theme_bg_color;
+    background-color: @toolbar_bg_color;
     text-shadow: none;
 }
 
@@ -3246,33 +3246,33 @@ GtkBubbleWindow .toolbar {
     border-style: none;
     padding: 4px;
     background: none;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.3);
+    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.3);
     box-shadow: none;
 }
 
 .titlebar .titlebutton:hover {
     background: none;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.2);
+    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.2);
     box-shadow: none;
 }
 
 .titlebar .titlebutton:active,
 .titlebar .titlebutton:active:hover {
     background: none;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
+    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.1);
     box-shadow: none;
 }
 
 /*
 .titlebar .right .titlebutton:first-child {
-    border-left: 1px solid shade(@theme_bg_color, 0.9);
+    border-left: 1px solid shade(@toolbar_bg_color, 0.9);
 }
 
 .titlebar .right .titlebutton:last-child {
 }
 
 .titlebar .left .titlebutton:last-child {
-    border-right: 1px solid shade(@theme_bg_color, 0.9);
+    border-right: 1px solid shade(@toolbar_bg_color, 0.9);
 }
 
 .titlebar .left .titlebutton:first-child {
@@ -3281,7 +3281,7 @@ GtkBubbleWindow .toolbar {
 
 .titlebar .titlebutton:backdrop {
     background-image: none;
-    color: mix(@theme_fg_color, @theme_bg_color, 0.5);
+    color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.5);
 }
 
 .window-frame {
