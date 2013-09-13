@@ -922,6 +922,8 @@ GtkComboBox .menu {
                                      color-stop (0.49, shade(shade(@theme_selected_bg_color, 0.86), 1.04)),
                                      color-stop (0.50, shade(@theme_selected_bg_color, 0.86)),
                                      to (shade(@theme_selected_bg_color, 0.77)));
+
+    color: @theme_selected_fg_color;
 }
 
 .menubar .menuitem *:hover {
