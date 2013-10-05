@@ -10,30 +10,35 @@ XfceHeading {
 }
 
 .xfce4-panel .button {
-    border-radius: 0;
+    border-radius: 2px;
     padding: 1px;
     color: @panel_fg_color;
 }
 
 .xfce4-panel .button:active {
     border-width: 0 1px;
-    border-radius: 0;
+    border-radius: 2px;
     border-color: shade(@panel_bg_color, 0.7);
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(@panel_bg_color, 0.85)),
                                      to (shade(@panel_bg_color, 1.0)));
 
-    color: @panel_fg_color;
+    color: shade(@panel_fg_color, 1.3);
 }
 
 .xfce4-panel .button:hover,
 .xfce4-panel .button:active:hover {
     border-color: shade(@panel_bg_color, 0.7);
     background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@panel_bg_color, 1.7)),
-                                     to (shade(@panel_bg_color, 1.25)));
+                                     from (shade (@selected_bg_color, 0.5)),
+                                     to (shade(@selected_bg_color, 0.4)));
 
-    color: @panel_fg_color;
+    box-shadow: inset 0 -1px alpha(white, 0.0),
+                inset 1px 0 alpha(white, 0.1),
+                inset -1px 0 alpha(white, 0.1),
+                inset 0 1px alpha(white, 0.1);
+    color: shade(@panel_fg_color, 1.3);
+    transition: none;
 }
 
 /* menu-styling, e.g. for indicators */
@@ -49,10 +54,12 @@ XfceHeading {
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(@theme_selected_bg_color, 1.1)),
                                      to (shade(@theme_selected_bg_color, 0.9)));
+    transition: none;
 }
 
 .xfce4-panel .menu GtkLabel:hover,
 .xfce4-panel .menu GtkImage:hover {
     background-image: none;
     color: @theme_selected_fg_color;
+    background-color: transparent;
 }
