@@ -39,7 +39,7 @@
     -GtkTextView-error-underline-color: @error_color;
     -GtkToolButton-icon-spacing: 6;
     -GtkToolItemGroup-expander-size: 11;
-    -GtkTreeView-expander-size: 1;
+    -GtkTreeView-expander-size: 11;
     -GtkWidget-focus-line-width: 1;
     -GtkWidget-focus-padding: 0;
     -GtkWidget-link-color: @link_color;
