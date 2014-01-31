@@ -40,3 +40,7 @@ XfceHeading {
     color: shade(@panel_fg_color, 1.3);
     transition: none;
 }
+
+.xfce4-panel .menu {
+    -gtk-image-effect: none;
+}
