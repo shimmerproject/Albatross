@@ -41,25 +41,6 @@ XfceHeading {
     transition: none;
 }
 
-/* menu-styling, e.g. for indicators */
-.xfce4-panel .menu,
-.xfce4-panel .menu GtkLabel,
-.xfce4-panel .menu GtkImage {
-    background-color: @menu_bg_color;
-    color: @menu_fg_color;
-}
-
-.xfce4-panel .menu *:hover {
-    border-color: shade(@theme_selected_bg_color, 0.8);
-    background-image: -gtk-gradient(linear, left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.1)),
-                                     to (shade(@theme_selected_bg_color, 0.9)));
-    transition: none;
-}
-
-.xfce4-panel .menu GtkLabel:hover,
-.xfce4-panel .menu GtkImage:hover {
-    background-image: none;
-    color: @theme_selected_fg_color;
-    background-color: transparent;
+.xfce4-panel .menu {
+    -gtk-image-effect: none;
 }
