@@ -527,7 +527,7 @@ style "xfdesktop-icon-view" {
 	XfdesktopIconView::selected-shadow-x-offset = 1
 	XfdesktopIconView::selected-shadow-y-offset = 1
 	XfdesktopIconView::shadow-color = @fg_color
-	XfdesktopIconView::selected-shadow-color = @fg_color
+	XfdesktopIconView::selected-shadow-color = @bg_color
 
 	base[NORMAL] = "#30334A"
 	base[SELECTED] = "#d3efef" #shade (1.4, @selected_bg_color)
