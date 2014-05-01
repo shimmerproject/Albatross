@@ -2766,7 +2766,7 @@ GtkColorButton.button {
 .header-bar .raised.linked .button:insensitive,
 .header-bar .linked .button,
 .header-bar .linked .button:active,
-.header-bar .linked .button:insensitive, {
+.header-bar .linked .button:insensitive {
     border-width: 1px;
     border-radius: 0;
     border-right-width: 0;
