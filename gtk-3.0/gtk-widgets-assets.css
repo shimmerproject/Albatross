@@ -96,7 +96,7 @@
 }
 
 .menuitem.check:active:hover, .menuitem.check:checked:hover {
-    -gtk-icon-source: url("assets/menuitem-checkbox-checked-hover.png");
+    -gtk-icon-source: url("assets/menuitem-checkbox-checked-selected.png");
 }
 
 .menuitem.check:active:insensitive, .menuitem.check:checked:insensitive {
@@ -105,7 +105,7 @@
 
 .menuitem.check:inconsistent:hover,
 .menuitem.radio:inconsistent:hover {
-    -gtk-icon-source: url("assets/menuitem-checkbox-mixed-hover.png");
+    -gtk-icon-source: url("assets/menuitem-checkbox-mixed-selected.png");
 }
 
 .menuitem.check:inconsistent,
@@ -123,7 +123,7 @@
 }
 
 .menuitem.radio:active:hover, .menuitem.radio:checked:hover {
-    -gtk-icon-source: url("assets/menuitem-radio-checked-hover.png");
+    -gtk-icon-source: url("assets/menuitem-radio-checked-selected.png");
 }
 
 .menuitem.radio:active:insensitive, .menuitem.radio:checked:insensitive {
