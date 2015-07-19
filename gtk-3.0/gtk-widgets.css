@@ -295,6 +295,16 @@ GtkAssistant .sidebar {
                                      to (shade(@theme_bg_color, 0.82)));
 }
 
+.button.flat,
+.button.flat:insensitive,
+.header-bar .button.flat,
+.header-bar .button.flat:insensitive {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+}
+
 /****************
  * cell and row *
  ****************/
@@ -603,6 +613,11 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
     border-radius: 0;
+}
+
+.frame.flat {
+    border: none;
+    box-shadow: none;
 }
 
 /*******************
@@ -2277,8 +2292,11 @@ GtkColorButton.button {
 }
 
 .primary-toolbar .button:hover,
+.primary-toolbar .button.flat:hover,
 .toolbar .button:hover,
-.header-bar .button:hover {
+.toolbar .button.flat:hover,
+.header-bar .button:hover,
+.header-bar .button.flat:hover {
     border-color: shade(@toolbar_bg_color, 0.7);
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(shade(@theme_selected_bg_color, 1.31), 1.04)),
@@ -2288,11 +2306,17 @@ GtkColorButton.button {
 }
 
 .primary-toolbar .button:checked,
+.primary-toolbar .button.flat:checked,
 .primary-toolbar .button:active,
+.primary-toolbar .button.flat:active,
 .toolbar .button:checked,
+.toolbar .button.flat:checked,
 .toolbar .button:active,
+.toolbar .button.flat:active,
 .header-bar .button:checked,
-.header-bar .button:active {
+.header-bar .button.flat:checked,
+.header-bar .button:active,
+.header-bar .button.flat:active {
     border-color: shade(@toolbar_bg_color, 0.7);
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(shade(@toolbar_bg_color, 0.98), 1.04)),
@@ -2334,6 +2358,24 @@ GtkColorButton.button {
 .header-bar .button:checked:hover:focus,
 .header-bar .button:active:hover:focus {
     border-color: shade(@theme_selected_bg_color, 0.8);
+}
+
+.primary-toolbar GtkComboBox.flat,
+.primary-toolbar .button.flat,
+.primary-toolbar GtkComboBox.flat,
+.primary-toolbar .button.flat,
+.toolbar GtkComboBox.flat,
+.toolbar .button.flat,
+.primary-toolbar GtkComboBox.flat:insensitive,
+.primary-toolbar .button.flat:insensitive,
+.primary-toolbar GtkComboBox.flat:insensitive,
+.primary-toolbar .button.flat:insensitive,
+.toolbar GtkComboBox.flat:insensitive,
+.toolbar .button.flat:insensitive {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
 }
 
 .primary-toolbar .button:insensitive,
