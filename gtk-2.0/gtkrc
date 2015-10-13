@@ -2,8 +2,8 @@
 # 1.x: James Schriver <jws141@gmail.com>, Steve Dodier <sidnioulz@gmail.com>
 #      Inspired by Shiki-Wise by perfectska04 (Victor C.)
 # 2.x: Pasi Lallinaho <pasi@shimmerproject.org>
-          
-gtk-color-scheme = "fg_color:#202020\nbg_color:#EDEDED\nbase_color:#fff\ntext_color:#444\nselected_bg_color:#A9B7C4\nselected_fg_color:#333333\ntooltip_bg_color:#D6DCE4\ntooltip_fg_color:#222222"
+
+gtk-color-scheme = "fg_color:#303030\nbg_color:#e5e5e5\nbase_color:#fcfcfc\ntext_color:#444\nselected_bg_color:#91b6d7\nselected_fg_color:#333\ntooltip_bg_color:#000\ntooltip_fg_color:#e1e1e1"
 
 gtk-icon-sizes = "gtk-button = 16,16"
 
@@ -537,7 +537,3 @@ style "xfdesktop-icon-view" {
 
 }
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
-
-## workaround for the evil GDM 2.28
-widget_class "*GdmGreeterPanel*" style "dark"
-
